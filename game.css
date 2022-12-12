@@ -1,0 +1,95 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("./images/tree.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.parent {
+  margin: 40px 0px;
+  width: 400px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  row-gap: 5px;
+  column-gap: 10px;
+}
+.column-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.box-1 {
+  border-radius: 16px;
+  margin: auto;
+  width: 100px;
+  height: 60px;
+  background: linear-gradient(
+      to right,
+      transparent 36%,
+      #fd0 36%,
+      #fd0 46%,
+      transparent 46%
+    ),
+    linear-gradient(#f00 43%, #fd0 43%, #fd0 57%, #f00 57%);
+}
+.box-2 {
+  border-radius: 16px;
+  margin: auto;
+  width: 100px;
+  height: 60px;
+  background: linear-gradient(
+      to right,
+      transparent 36%,
+      #f00 36%,
+      #f00 46%,
+      transparent 46%
+    ),
+    linear-gradient(#28560c 43%, #f00 43%, #f00 57%, #28560c 57%);
+}
+.box-3 {
+  border-radius: 16px;
+  margin: auto;
+  width: 100px;
+  height: 60px;
+  background: linear-gradient(
+      to right,
+      transparent 36%,
+      #b58f36 36%,
+      #b58f36 46%,
+      transparent 46%
+    ),
+    linear-gradient(#0b296a 43%, #b58f36 43%, #b58f36 57%, #0b296a 57%);
+}
+
+.coal {
+  width: 100px;
+  height: 60px;
+  background: url("./images/caol.png") no-repeat;
+  background-size: contain;
+}
+.diamond {
+  width: 100px;
+  height: 60px;
+  background: url("./images/Diamond.png") no-repeat;
+  background-size: contain;
+}
+.fail-message {
+  font-family: "Mountains of Christmas";
+  font-size: 40px;
+  font-weight: bolder;
+  color: #f00;
+  display: none;
+}
+.success-message {
+  font-family: "Mountains of Christmas";
+  font-size: 40px;
+  font-weight: bolder;
+  color: green;
+  display: none;
+}
